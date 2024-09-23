@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--header-bg-color);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container h1 {
+  color: var(--white);
+  margin: 0;
+}

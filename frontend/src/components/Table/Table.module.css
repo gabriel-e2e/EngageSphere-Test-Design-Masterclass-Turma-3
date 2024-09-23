@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container th, td {
+  padding: 15px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container th {
+  background-color: var(--table-header-bg-color);
+  color: #ffffff;
+}
+
+.container tbody tr td {
+  text-align: left;
+}
+
+.container th:nth-child(1),
+.container th:nth-child(6),
+.container td:nth-child(1) {
+  text-align: center;
+}
+
+.container th {
+  background-color: var(--table-header-bg-color);
+  color: #ffffff;
+}
+
+.container th:nth-child(4),
+.container th:nth-child(5) {
+  cursor: pointer;
+}
+
+.container th:nth-child(4) button,
+.container th:nth-child(5) button,
+.container tbody tr button {
+  all: unset;
+  outline: revert;
+}
+
+.container tbody tr td:nth-child(6) {
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--pagination-button-hover-bg-color);
+  color: var(--pagination-button-hover-text-color);
+}
+
+.container tbody tr td:nth-child(6):hover,
+.container tbody tr td:nth-child(6) button:hover {
+  background-color: var(--pagination-button-bg-color);
+  color: var(--pagination-button-text-color);
+}
+
+.container th:nth-child(1) {
+  width: 20px;
+}
+
+.container th:nth-child(6) {
+  width: 8%;
+}
+
+.container tr:hover {
+  background-color: var(--table-row-hover-bg-color);
+}
+
+@media (max-width: 468px) {
+  .container th, td {
+    padding: 10px;
+  }
+
+  .container thead th:nth-child(1),
+  .container thead th:nth-child(3),
+  .container thead th:nth-child(4),
+  .container thead th:nth-child(5),
+  .container tbody tr td:nth-child(1),
+  .container tbody tr td:nth-child(3),
+  .container tbody tr td:nth-child(4),
+  .container tbody tr td:nth-child(5) {
+    display: none;
+  }
+
+  .container th:nth-child(6) {
+    width: 25%;
+  }
+}

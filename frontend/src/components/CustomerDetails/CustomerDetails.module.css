@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--container-bg-color);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--container-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .showHideAddress {
+  display: flex;
+  justify-content: center;
+}
+
+.container .showHideAddress .showAddressBtn,
+.container .showHideAddress .hideAddressBtn {
+  all: unset;
+  text-decoration: underline;
+  outline: revert;
+}
+
+.container .showHideAddress button:hover {
+  all: unset;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 468px) {
+  .container {
+    margin: 10px;
+    font-size: medium;
+    margin: 4px 0;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,117 @@
+/* Generic Colors */
+:root {
+  --white: #ffffff;
+  --dark-blue: #094067;
+  --light-gray: #f9f9f9;
+  --medium-gray: #f5f5f5;
+  --light-blue: #3da9fc;
+  --blue: #1D4ED8;
+  --hover-blue: #0144ff;
+  --dark-cyan: #2b6a99;
+  --gray: #cccccc;
+  --dark-gray: #333333;
+  --medium-dark-gray: #666666;
+  --black: #1a1a1a;
+  --medium-dark-gray-alt: #343434;
+  --dark-slate: #424242;
+  --almost-black: #101010;
+  --medium-dark-slate: #555555;
+  --off-white: #f0f0f0;
+  --charcoal: #101010;
+}
+
+/* Light Theme Styles */
+:root {
+  --background-color: var(--white);
+  --text-color: var(--dark-blue);
+  --container-bg-color: var(--light-gray);
+  --header-bg-color: var(--blue);
+  --input-border-color: var(--white);
+  --messenger-button-border-color: var(--light-blue);
+  --button-bg-color: var(--blue);
+  --button-text-color: var(--white);
+  --table-header-bg-color: var(--blue);
+  --table-row-hover-bg-color: var(--medium-gray);
+  --pagination-button-bg-color: var(--white);
+  --pagination-button-text-color: var(--dark-blue);
+  --pagination-button-border-color: var(--blue);
+  --pagination-select-border-color: var(--blue);
+  --footer-bg-color: var(--blue);
+  --footer-text-color: var(--white);
+  --link-text-color: var(--white);
+  --link-hover-text-decoration: underline;
+  --input-disabled-bg-color: var(--dark-blue);
+  --input-disabled-text-color: var(--gray);
+  --button-hover-bg-color: var(--white);
+  --button-hover-text-color: var(--blue);
+  --pagination-button-hover-bg-color: var(--blue);
+  --pagination-button-hover-text-color: var(--white);
+  --pagination-button-disabled-border-color: var(--gray);
+  --pagination-button-disabled-color: var(--gray);
+  --pagination-button-disabled-bg-color: var(--light-gray);
+  --messenger-input-border-color: var(--light-blue);
+}
+
+/* Dark Theme Styles */
+[data-theme='dark'] {
+  --background-color: var(--dark-gray);
+  --text-color: var(--white);
+  --container-bg-color: var(--medium-dark-gray-alt);
+  --header-bg-color: var(--black);
+  --input-border-color: var(--white);
+  --messenger-button-border-color: var(--medium-dark-gray);
+  --button-bg-color: var(--black);
+  --button-text-color: var(--white);
+  --table-header-bg-color: var(--almost-black);
+  --table-row-hover-bg-color: var(--medium-dark-slate);
+  --pagination-button-bg-color: var(--dark-slate);
+  --pagination-button-text-color: var(--white);
+  --pagination-button-border-color: var(--white);
+  --pagination-select-border-color: var(--white);
+  --footer-bg-color: var(--black);
+  --footer-text-color: var(--white);
+  --link-text-color: var(--white);
+  --link-hover-text-decoration: underline;
+  --input-disabled-bg-color: var(--medium-dark-gray);
+  --input-disabled-text-color: var(--medium-dark-slate);
+  --button-hover-bg-color: var(--white);
+  --button-hover-text-color: var(--charcoal);
+  --pagination-button-hover-bg-color: var(--almost-black);
+  --pagination-button-hover-text-color: var(--white);
+  --pagination-button-disabled-border-color: var(--medium-dark-gray);
+  --pagination-button-disabled-color: var(--medium-dark-gray);
+  --pagination-button-disabled-bg-color: var(--dark-gray);
+  --messenger-input-border-color: var(--medium-dark-gray);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+div:has(#loading) {
+  border: none;
+  background-color: none;
+  box-shadow: none;
+}

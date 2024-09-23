@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.container .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.container .button:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
